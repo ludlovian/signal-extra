@@ -1,0 +1,90 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@ludlovian/diff-object':
+    specifier: github:ludlovian/diff-object
+    version: github.com/ludlovian/diff-object/06f54ee0e806f46119b995482e316c525319529e
+  '@preact/signals-core':
+    specifier: ^1.3.0
+    version: 1.3.0
+  bouncer:
+    specifier: github:ludlovian/bouncer
+    version: github.com/ludlovian/bouncer/619bd4db5ec4ab8c62f58390a2e4ac4701a15b0a
+
+devDependencies:
+  pixutil:
+    specifier: github:ludlovian/pixutil
+    version: github.com/ludlovian/pixutil/af44ea08a361af0064695097cd1fa9caa9e07e53
+  uvu:
+    specifier: ^0.5.6
+    version: 0.5.6
+
+packages:
+
+  /@preact/signals-core@1.3.0:
+    resolution: {integrity: sha512-M+M3ZOtd1dtV/uasyk4SZu1vbfEJ4NeENv0F7F12nijZYedB5wSgbtZcuACyssnTznhF4ctUyrR0dZHuHfyWKA==}
+    dev: false
+
+  /dequal@2.0.3:
+    resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
+    engines: {node: '>=6'}
+
+  /diff@5.1.0:
+    resolution: {integrity: sha512-D+mk+qE8VC/PAUrlAU34N+VfXev0ghe5ywmpqrawphmVZc1bEfn56uo9qpyGp1p4xpzOHkSW4ztBd6L7Xx4ACw==}
+    engines: {node: '>=0.3.1'}
+
+  /kleur@4.1.5:
+    resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
+    engines: {node: '>=6'}
+
+  /mri@1.2.0:
+    resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
+    engines: {node: '>=4'}
+
+  /sade@1.8.1:
+    resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
+    engines: {node: '>=6'}
+    dependencies:
+      mri: 1.2.0
+
+  /uvu@0.5.6:
+    resolution: {integrity: sha512-+g8ENReyr8YsOc6fv/NVJs2vFdHBnBNdfE49rshrTzDWOlUx4Gq7KOS2GD8eqhy2j+Ejq29+SbKH8yjkAqXqoA==}
+    engines: {node: '>=8'}
+    hasBin: true
+    dependencies:
+      dequal: 2.0.3
+      diff: 5.1.0
+      kleur: 4.1.5
+      sade: 1.8.1
+
+  github.com/ludlovian/bouncer/619bd4db5ec4ab8c62f58390a2e4ac4701a15b0a:
+    resolution: {tarball: https://codeload.github.com/ludlovian/bouncer/tar.gz/619bd4db5ec4ab8c62f58390a2e4ac4701a15b0a}
+    name: bouncer
+    version: 1.1.1
+    dependencies:
+      timer: github.com/ludlovian/timer/474b3e85bddedb81ae3d0f1911a51b070f1b752e
+    dev: false
+
+  github.com/ludlovian/diff-object/06f54ee0e806f46119b995482e316c525319529e:
+    resolution: {tarball: https://codeload.github.com/ludlovian/diff-object/tar.gz/06f54ee0e806f46119b995482e316c525319529e}
+    name: '@ludlovian/diff-object'
+    version: 0.1.2
+    dependencies:
+      pixutil: github.com/ludlovian/pixutil/af44ea08a361af0064695097cd1fa9caa9e07e53
+      uvu: 0.5.6
+    dev: false
+
+  github.com/ludlovian/pixutil/af44ea08a361af0064695097cd1fa9caa9e07e53:
+    resolution: {tarball: https://codeload.github.com/ludlovian/pixutil/tar.gz/af44ea08a361af0064695097cd1fa9caa9e07e53}
+    name: pixutil
+    version: 1.7.2
+
+  github.com/ludlovian/timer/474b3e85bddedb81ae3d0f1911a51b070f1b752e:
+    resolution: {tarball: https://codeload.github.com/ludlovian/timer/tar.gz/474b3e85bddedb81ae3d0f1911a51b070f1b752e}
+    name: timer
+    version: 1.2.0
+    dev: false
