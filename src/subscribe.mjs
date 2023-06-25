@@ -4,19 +4,26 @@ import clone from 'pixutil/clone'
 import Bouncer from 'bouncer'
 
 export default function subscribe (getCurrent, callback, opts = {}) {
-  const { debounce } = opts
-  let prev = {}
-  const bouncer = debounce ? new Bouncer({ after: debounce, fn: send }) : null
+  const { diff = true } = opts
+  const bouncer =
+    opts.bouncer ??
+    (opts.debounce ? new Bouncer({ after: opts.debounce }) : null)
+  if (bouncer) bouncer.fn = send
   const fn = bouncer ? bouncer.fire : send
+  let prev = {}
   const dispose = effect(() => fn(getCurrent()))
 
   return stop
 
   function send () {
-    const latest = getCurrent()
-    const diff = diffObject(prev, latest)
-    if (Object.keys(diff).length) callback(diff)
-    prev = clone(latest)
+    let data = getCurrent()
+    if (diff) {
+      const _data = data
+      data = diffObject(prev, _data)
+      prev = clone(_data)
+      if (!Object.keys(data).length) data = null
+    }
+    if (data !== null) callback(data)
   }
 
   function stop () {
