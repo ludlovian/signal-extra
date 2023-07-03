@@ -7,13 +7,13 @@ settings:
 dependencies:
   '@ludlovian/diff-object':
     specifier: github:ludlovian/diff-object
-    version: github.com/ludlovian/diff-object/06f54ee0e806f46119b995482e316c525319529e
+    version: github.com/ludlovian/diff-object/9ac8a74806186c2badc751f9fde6a7d31db67868
   '@preact/signals-core':
-    specifier: ^1.3.0
-    version: 1.3.0
+    specifier: ^1.3.1
+    version: 1.3.1
   bouncer:
     specifier: github:ludlovian/bouncer
-    version: github.com/ludlovian/bouncer/619bd4db5ec4ab8c62f58390a2e4ac4701a15b0a
+    version: github.com/ludlovian/bouncer/51c836d366fca5e1d5c3332dd4c03b599c9b12d1
 
 devDependencies:
   pixutil:
@@ -25,8 +25,8 @@ devDependencies:
 
 packages:
 
-  /@preact/signals-core@1.3.0:
-    resolution: {integrity: sha512-M+M3ZOtd1dtV/uasyk4SZu1vbfEJ4NeENv0F7F12nijZYedB5wSgbtZcuACyssnTznhF4ctUyrR0dZHuHfyWKA==}
+  /@preact/signals-core@1.3.1:
+    resolution: {integrity: sha512-DL+3kDssZ3UOMz9HufwSYE/gK0+TnT1jzegfF5rstgyPrnyfjz4BHAoxmzQA6Mkp4UlKe8qjsgl3v5a/obzNig==}
     dev: false
 
   /dequal@2.0.3:
@@ -61,18 +61,18 @@ packages:
       kleur: 4.1.5
       sade: 1.8.1
 
-  github.com/ludlovian/bouncer/619bd4db5ec4ab8c62f58390a2e4ac4701a15b0a:
-    resolution: {tarball: https://codeload.github.com/ludlovian/bouncer/tar.gz/619bd4db5ec4ab8c62f58390a2e4ac4701a15b0a}
+  github.com/ludlovian/bouncer/51c836d366fca5e1d5c3332dd4c03b599c9b12d1:
+    resolution: {tarball: https://codeload.github.com/ludlovian/bouncer/tar.gz/51c836d366fca5e1d5c3332dd4c03b599c9b12d1}
     name: bouncer
-    version: 1.1.1
+    version: 1.2.3
     dependencies:
-      timer: github.com/ludlovian/timer/474b3e85bddedb81ae3d0f1911a51b070f1b752e
+      timer: github.com/ludlovian/timer/71e1b8049083dcac5be341a49ea79ab0193f67f5
     dev: false
 
-  github.com/ludlovian/diff-object/06f54ee0e806f46119b995482e316c525319529e:
-    resolution: {tarball: https://codeload.github.com/ludlovian/diff-object/tar.gz/06f54ee0e806f46119b995482e316c525319529e}
+  github.com/ludlovian/diff-object/9ac8a74806186c2badc751f9fde6a7d31db67868:
+    resolution: {tarball: https://codeload.github.com/ludlovian/diff-object/tar.gz/9ac8a74806186c2badc751f9fde6a7d31db67868}
     name: '@ludlovian/diff-object'
-    version: 0.1.2
+    version: 0.2.0
     dependencies:
       pixutil: github.com/ludlovian/pixutil/af44ea08a361af0064695097cd1fa9caa9e07e53
       uvu: 0.5.6
@@ -83,8 +83,8 @@ packages:
     name: pixutil
     version: 1.7.2
 
-  github.com/ludlovian/timer/474b3e85bddedb81ae3d0f1911a51b070f1b752e:
-    resolution: {tarball: https://codeload.github.com/ludlovian/timer/tar.gz/474b3e85bddedb81ae3d0f1911a51b070f1b752e}
+  github.com/ludlovian/timer/71e1b8049083dcac5be341a49ea79ab0193f67f5:
+    resolution: {tarball: https://codeload.github.com/ludlovian/timer/tar.gz/71e1b8049083dcac5be341a49ea79ab0193f67f5}
     name: timer
-    version: 1.2.0
+    version: 1.3.0
     dev: false

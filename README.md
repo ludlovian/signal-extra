@@ -65,3 +65,4 @@ It uses `effect`, so the getState function has to depend on `signal`s or `comput
 - debounce - If given (in ms), then a waiting debouncer will be used
 - bouncer - If a Bouncer instance is supplied, it will be used for the throttling or debouncing
 
+You can also pass any `diff-object` options here, if diffing
