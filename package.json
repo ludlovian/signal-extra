@@ -2,7 +2,7 @@
   "name": "@ludlovian/signal-extra",
   "private": true,
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Signal add-ons",
   "exports": {
     ".": "./src/index.mjs",
