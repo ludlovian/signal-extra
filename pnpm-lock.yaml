@@ -1,90 +1,105 @@
-lockfileVersion: '6.0'
+lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  '@ludlovian/diff-object':
-    specifier: github:ludlovian/diff-object
-    version: github.com/ludlovian/diff-object/9ac8a74806186c2badc751f9fde6a7d31db67868
-  '@preact/signals-core':
-    specifier: ^1.3.1
-    version: 1.3.1
-  bouncer:
-    specifier: github:ludlovian/bouncer
-    version: github.com/ludlovian/bouncer/51c836d366fca5e1d5c3332dd4c03b599c9b12d1
+importers:
 
-devDependencies:
-  pixutil:
-    specifier: github:ludlovian/pixutil
-    version: github.com/ludlovian/pixutil/af44ea08a361af0064695097cd1fa9caa9e07e53
-  uvu:
-    specifier: ^0.5.6
-    version: 0.5.6
+  .:
+    dependencies:
+      '@ludlovian/diff-object':
+        specifier: github:ludlovian/diff-object
+        version: https://codeload.github.com/ludlovian/diff-object/tar.gz/9ac8a74806186c2badc751f9fde6a7d31db67868
+      '@preact/signals-core':
+        specifier: ^1.6.0
+        version: 1.6.0
+      bouncer:
+        specifier: github:ludlovian/bouncer
+        version: https://codeload.github.com/ludlovian/bouncer/tar.gz/d6154cb3a3efa3783f36877b1eadd8599441e80e
+    devDependencies:
+      pixutil:
+        specifier: github:ludlovian/pixutil
+        version: https://codeload.github.com/ludlovian/pixutil/tar.gz/48943b90fbe02e49fb572f71e3e907854790c378
 
 packages:
 
-  /@preact/signals-core@1.3.1:
-    resolution: {integrity: sha512-DL+3kDssZ3UOMz9HufwSYE/gK0+TnT1jzegfF5rstgyPrnyfjz4BHAoxmzQA6Mkp4UlKe8qjsgl3v5a/obzNig==}
-    dev: false
+  '@ludlovian/diff-object@https://codeload.github.com/ludlovian/diff-object/tar.gz/9ac8a74806186c2badc751f9fde6a7d31db67868':
+    resolution: {tarball: https://codeload.github.com/ludlovian/diff-object/tar.gz/9ac8a74806186c2badc751f9fde6a7d31db67868}
+    version: 0.2.0
 
-  /dequal@2.0.3:
+  '@preact/signals-core@1.6.0':
+    resolution: {integrity: sha512-O/XGxwP85h1F7+ouqTMOIZ3+V1whfaV9ToIVcuyGriD4JkSD00cQo54BKdqjvBJxbenvp7ynfqRHEwI6e+NIhw==}
+
+  bouncer@https://codeload.github.com/ludlovian/bouncer/tar.gz/d6154cb3a3efa3783f36877b1eadd8599441e80e:
+    resolution: {tarball: https://codeload.github.com/ludlovian/bouncer/tar.gz/d6154cb3a3efa3783f36877b1eadd8599441e80e}
+    version: 2.0.1
+
+  dequal@2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
     engines: {node: '>=6'}
 
-  /diff@5.1.0:
-    resolution: {integrity: sha512-D+mk+qE8VC/PAUrlAU34N+VfXev0ghe5ywmpqrawphmVZc1bEfn56uo9qpyGp1p4xpzOHkSW4ztBd6L7Xx4ACw==}
+  diff@5.2.0:
+    resolution: {integrity: sha512-uIFDxqpRZGZ6ThOk84hEfqWoHx2devRFvpTZcTHur85vImfaxUbTW9Ryh4CpCuDnToOP1CEtXKIgytHBPVff5A==}
     engines: {node: '>=0.3.1'}
 
-  /kleur@4.1.5:
+  kleur@4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
 
-  /mri@1.2.0:
+  mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
 
-  /sade@1.8.1:
+  pixutil@https://codeload.github.com/ludlovian/pixutil/tar.gz/48943b90fbe02e49fb572f71e3e907854790c378:
+    resolution: {tarball: https://codeload.github.com/ludlovian/pixutil/tar.gz/48943b90fbe02e49fb572f71e3e907854790c378}
+    version: 1.10.0
+
+  sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
-    dependencies:
-      mri: 1.2.0
 
-  /uvu@0.5.6:
+  timer@https://codeload.github.com/ludlovian/timer/tar.gz/22b2e247282c4275af5ff1b5dbd584c42397fdac:
+    resolution: {tarball: https://codeload.github.com/ludlovian/timer/tar.gz/22b2e247282c4275af5ff1b5dbd584c42397fdac}
+    version: 2.0.2
+
+  uvu@0.5.6:
     resolution: {integrity: sha512-+g8ENReyr8YsOc6fv/NVJs2vFdHBnBNdfE49rshrTzDWOlUx4Gq7KOS2GD8eqhy2j+Ejq29+SbKH8yjkAqXqoA==}
     engines: {node: '>=8'}
     hasBin: true
+
+snapshots:
+
+  '@ludlovian/diff-object@https://codeload.github.com/ludlovian/diff-object/tar.gz/9ac8a74806186c2badc751f9fde6a7d31db67868':
+    dependencies:
+      pixutil: https://codeload.github.com/ludlovian/pixutil/tar.gz/48943b90fbe02e49fb572f71e3e907854790c378
+      uvu: 0.5.6
+
+  '@preact/signals-core@1.6.0': {}
+
+  bouncer@https://codeload.github.com/ludlovian/bouncer/tar.gz/d6154cb3a3efa3783f36877b1eadd8599441e80e:
+    dependencies:
+      timer: https://codeload.github.com/ludlovian/timer/tar.gz/22b2e247282c4275af5ff1b5dbd584c42397fdac
+
+  dequal@2.0.3: {}
+
+  diff@5.2.0: {}
+
+  kleur@4.1.5: {}
+
+  mri@1.2.0: {}
+
+  pixutil@https://codeload.github.com/ludlovian/pixutil/tar.gz/48943b90fbe02e49fb572f71e3e907854790c378: {}
+
+  sade@1.8.1:
+    dependencies:
+      mri: 1.2.0
+
+  timer@https://codeload.github.com/ludlovian/timer/tar.gz/22b2e247282c4275af5ff1b5dbd584c42397fdac: {}
+
+  uvu@0.5.6:
     dependencies:
       dequal: 2.0.3
-      diff: 5.1.0
+      diff: 5.2.0
       kleur: 4.1.5
       sade: 1.8.1
-
-  github.com/ludlovian/bouncer/51c836d366fca5e1d5c3332dd4c03b599c9b12d1:
-    resolution: {tarball: https://codeload.github.com/ludlovian/bouncer/tar.gz/51c836d366fca5e1d5c3332dd4c03b599c9b12d1}
-    name: bouncer
-    version: 1.2.3
-    dependencies:
-      timer: github.com/ludlovian/timer/71e1b8049083dcac5be341a49ea79ab0193f67f5
-    dev: false
-
-  github.com/ludlovian/diff-object/9ac8a74806186c2badc751f9fde6a7d31db67868:
-    resolution: {tarball: https://codeload.github.com/ludlovian/diff-object/tar.gz/9ac8a74806186c2badc751f9fde6a7d31db67868}
-    name: '@ludlovian/diff-object'
-    version: 0.2.0
-    dependencies:
-      pixutil: github.com/ludlovian/pixutil/af44ea08a361af0064695097cd1fa9caa9e07e53
-      uvu: 0.5.6
-    dev: false
-
-  github.com/ludlovian/pixutil/af44ea08a361af0064695097cd1fa9caa9e07e53:
-    resolution: {tarball: https://codeload.github.com/ludlovian/pixutil/tar.gz/af44ea08a361af0064695097cd1fa9caa9e07e53}
-    name: pixutil
-    version: 1.7.2
-
-  github.com/ludlovian/timer/71e1b8049083dcac5be341a49ea79ab0193f67f5:
-    resolution: {tarball: https://codeload.github.com/ludlovian/timer/tar.gz/71e1b8049083dcac5be341a49ea79ab0193f67f5}
-    name: timer
-    version: 1.3.0
-    dev: false

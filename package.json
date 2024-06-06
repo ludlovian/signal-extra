@@ -14,19 +14,18 @@
     "clean": "rm -rf coverage",
     "format": "prettier-standard {src,test}/*.{m,}js",
     "lint": "standard {src,test}/*.{m,}js|snazzy",
-    "test": "c8 uvu",
+    "test": "c8 node --test",
     "coverage": "npm run test && c8 report --reporter=html && sirv coverage/ -H 0.0.0.0 -p 8000"
   },
   "keywords": [],
   "author": "",
   "license": "Unlicense",
   "devDependencies": {
-    "pixutil": "github:ludlovian/pixutil",
-    "uvu": "^0.5.6"
+    "pixutil": "github:ludlovian/pixutil"
   },
   "dependencies": {
     "@ludlovian/diff-object": "github:ludlovian/diff-object",
-    "@preact/signals-core": "^1.3.1",
+    "@preact/signals-core": "^1.6.0",
     "bouncer": "github:ludlovian/bouncer"
   }
 }
