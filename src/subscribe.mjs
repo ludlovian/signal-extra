@@ -4,12 +4,17 @@ import clone from 'pixutil/clone'
 import Bouncer from 'bouncer'
 
 export default function subscribe (getCurrent, callback, opts = {}) {
-  const { diff = true, ...diffOpts } = opts
-  const bouncer =
-    opts.bouncer ??
-    (opts.debounce ? new Bouncer({ after: opts.debounce }) : null)
-  if (bouncer) bouncer.fn = send
-  const fn = bouncer ? bouncer.fire : send
+  const { diff = true, bouncer: useBouncer, debounce, ...diffOpts } = opts
+  let bouncer
+  let fn = send
+  if (useBouncer) {
+    bouncer = new Bouncer({ ...useBouncer, fn: send })
+    fn = bouncer.fire
+  } else if (debounce) {
+    bouncer = new Bouncer({ after: debounce, fn: send })
+    fn = bouncer.fire
+  }
+
   let prev = {}
   const dispose = effect(() => fn(getCurrent()))
 
@@ -28,6 +33,6 @@ export default function subscribe (getCurrent, callback, opts = {}) {
 
   function stop () {
     dispose()
-    bouncer && bouncer.stop()
+    bouncer && bouncer.cancel()
   }
 }
