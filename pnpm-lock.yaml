@@ -8,32 +8,40 @@ importers:
 
   .:
     dependencies:
+      '@ludlovian/bouncer':
+        specifier: github:ludlovian/bouncer
+        version: https://codeload.github.com/ludlovian/bouncer/tar.gz/36674b0b80b72af50798aa3a7702d67e7e104ae9
+      '@ludlovian/clone':
+        specifier: github:ludlovian/clone
+        version: https://codeload.github.com/ludlovian/clone/tar.gz/21e43fac111069bce2efebb7cf2d42cde2b743b7
       '@ludlovian/diff-object':
         specifier: github:ludlovian/diff-object
         version: https://codeload.github.com/ludlovian/diff-object/tar.gz/9ac8a74806186c2badc751f9fde6a7d31db67868
+    devDependencies:
       '@preact/signals-core':
         specifier: ^1.6.0
         version: 1.6.0
-      bouncer:
-        specifier: github:ludlovian/bouncer
-        version: https://codeload.github.com/ludlovian/bouncer/tar.gz/d6154cb3a3efa3783f36877b1eadd8599441e80e
-    devDependencies:
-      pixutil:
-        specifier: github:ludlovian/pixutil
-        version: https://codeload.github.com/ludlovian/pixutil/tar.gz/48943b90fbe02e49fb572f71e3e907854790c378
 
 packages:
+
+  '@ludlovian/bouncer@https://codeload.github.com/ludlovian/bouncer/tar.gz/36674b0b80b72af50798aa3a7702d67e7e104ae9':
+    resolution: {tarball: https://codeload.github.com/ludlovian/bouncer/tar.gz/36674b0b80b72af50798aa3a7702d67e7e104ae9}
+    version: 2.1.0
+
+  '@ludlovian/clone@https://codeload.github.com/ludlovian/clone/tar.gz/21e43fac111069bce2efebb7cf2d42cde2b743b7':
+    resolution: {tarball: https://codeload.github.com/ludlovian/clone/tar.gz/21e43fac111069bce2efebb7cf2d42cde2b743b7}
+    version: 0.1.0
 
   '@ludlovian/diff-object@https://codeload.github.com/ludlovian/diff-object/tar.gz/9ac8a74806186c2badc751f9fde6a7d31db67868':
     resolution: {tarball: https://codeload.github.com/ludlovian/diff-object/tar.gz/9ac8a74806186c2badc751f9fde6a7d31db67868}
     version: 0.2.0
 
+  '@ludlovian/timer@https://codeload.github.com/ludlovian/timer/tar.gz/f5c021e191d528db5e573a07c358477c1ff5f80f':
+    resolution: {tarball: https://codeload.github.com/ludlovian/timer/tar.gz/f5c021e191d528db5e573a07c358477c1ff5f80f}
+    version: 3.0.0
+
   '@preact/signals-core@1.6.0':
     resolution: {integrity: sha512-O/XGxwP85h1F7+ouqTMOIZ3+V1whfaV9ToIVcuyGriD4JkSD00cQo54BKdqjvBJxbenvp7ynfqRHEwI6e+NIhw==}
-
-  bouncer@https://codeload.github.com/ludlovian/bouncer/tar.gz/d6154cb3a3efa3783f36877b1eadd8599441e80e:
-    resolution: {tarball: https://codeload.github.com/ludlovian/bouncer/tar.gz/d6154cb3a3efa3783f36877b1eadd8599441e80e}
-    version: 2.0.1
 
   dequal@2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
@@ -51,17 +59,13 @@ packages:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
 
-  pixutil@https://codeload.github.com/ludlovian/pixutil/tar.gz/48943b90fbe02e49fb572f71e3e907854790c378:
-    resolution: {tarball: https://codeload.github.com/ludlovian/pixutil/tar.gz/48943b90fbe02e49fb572f71e3e907854790c378}
-    version: 1.10.0
+  pixutil@https://codeload.github.com/ludlovian/pixutil/tar.gz/016ab644da877cfc6c169f3320d40d7f7b079dc4:
+    resolution: {tarball: https://codeload.github.com/ludlovian/pixutil/tar.gz/016ab644da877cfc6c169f3320d40d7f7b079dc4}
+    version: 1.10.1
 
   sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
-
-  timer@https://codeload.github.com/ludlovian/timer/tar.gz/22b2e247282c4275af5ff1b5dbd584c42397fdac:
-    resolution: {tarball: https://codeload.github.com/ludlovian/timer/tar.gz/22b2e247282c4275af5ff1b5dbd584c42397fdac}
-    version: 2.0.2
 
   uvu@0.5.6:
     resolution: {integrity: sha512-+g8ENReyr8YsOc6fv/NVJs2vFdHBnBNdfE49rshrTzDWOlUx4Gq7KOS2GD8eqhy2j+Ejq29+SbKH8yjkAqXqoA==}
@@ -70,16 +74,20 @@ packages:
 
 snapshots:
 
+  '@ludlovian/bouncer@https://codeload.github.com/ludlovian/bouncer/tar.gz/36674b0b80b72af50798aa3a7702d67e7e104ae9':
+    dependencies:
+      '@ludlovian/timer': https://codeload.github.com/ludlovian/timer/tar.gz/f5c021e191d528db5e573a07c358477c1ff5f80f
+
+  '@ludlovian/clone@https://codeload.github.com/ludlovian/clone/tar.gz/21e43fac111069bce2efebb7cf2d42cde2b743b7': {}
+
   '@ludlovian/diff-object@https://codeload.github.com/ludlovian/diff-object/tar.gz/9ac8a74806186c2badc751f9fde6a7d31db67868':
     dependencies:
-      pixutil: https://codeload.github.com/ludlovian/pixutil/tar.gz/48943b90fbe02e49fb572f71e3e907854790c378
+      pixutil: https://codeload.github.com/ludlovian/pixutil/tar.gz/016ab644da877cfc6c169f3320d40d7f7b079dc4
       uvu: 0.5.6
 
-  '@preact/signals-core@1.6.0': {}
+  '@ludlovian/timer@https://codeload.github.com/ludlovian/timer/tar.gz/f5c021e191d528db5e573a07c358477c1ff5f80f': {}
 
-  bouncer@https://codeload.github.com/ludlovian/bouncer/tar.gz/d6154cb3a3efa3783f36877b1eadd8599441e80e:
-    dependencies:
-      timer: https://codeload.github.com/ludlovian/timer/tar.gz/22b2e247282c4275af5ff1b5dbd584c42397fdac
+  '@preact/signals-core@1.6.0': {}
 
   dequal@2.0.3: {}
 
@@ -89,13 +97,11 @@ snapshots:
 
   mri@1.2.0: {}
 
-  pixutil@https://codeload.github.com/ludlovian/pixutil/tar.gz/48943b90fbe02e49fb572f71e3e907854790c378: {}
+  pixutil@https://codeload.github.com/ludlovian/pixutil/tar.gz/016ab644da877cfc6c169f3320d40d7f7b079dc4: {}
 
   sade@1.8.1:
     dependencies:
       mri: 1.2.0
-
-  timer@https://codeload.github.com/ludlovian/timer/tar.gz/22b2e247282c4275af5ff1b5dbd584c42397fdac: {}
 
   uvu@0.5.6:
     dependencies:

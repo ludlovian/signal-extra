@@ -21,11 +21,14 @@
   "author": "",
   "license": "Unlicense",
   "devDependencies": {
-    "pixutil": "github:ludlovian/pixutil"
+    "@preact/signals-core": "^1.6.0"
   },
   "dependencies": {
-    "@ludlovian/diff-object": "github:ludlovian/diff-object",
-    "@preact/signals-core": "^1.6.0",
-    "bouncer": "github:ludlovian/bouncer"
+    "@ludlovian/bouncer": "github:ludlovian/bouncer",
+    "@ludlovian/clone": "github:ludlovian/clone",
+    "@ludlovian/diff-object": "github:ludlovian/diff-object"
+  },
+  "peerDependencies": {
+    "@preact/signals-core": "^1.6.0"
   }
 }

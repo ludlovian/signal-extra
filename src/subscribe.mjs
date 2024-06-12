@@ -1,7 +1,7 @@
 import { effect } from '@preact/signals-core'
 import diffObject from '@ludlovian/diff-object'
-import clone from 'pixutil/clone'
-import Bouncer from 'bouncer'
+import clone from '@ludlovian/clone'
+import Bouncer from '@ludlovian/bouncer'
 
 export default function subscribe (getCurrent, callback, opts = {}) {
   const { diff = true, bouncer: useBouncer, debounce, ...diffOpts } = opts

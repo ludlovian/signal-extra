@@ -1,9 +1,9 @@
 import { suite, test } from 'node:test'
 import assert from 'node:assert/strict'
+import { setTimeout as sleep } from 'node:timers/promises'
 
 import { signal } from '@preact/signals-core'
-import sleep from 'pixutil/sleep'
-import Bouncer from 'bouncer'
+import Bouncer from '@ludlovian/bouncer'
 
 import subscribe from '../src/subscribe.mjs'
 
